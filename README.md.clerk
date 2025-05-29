@@ -23,14 +23,6 @@ This project uses [Clerk](https://clerk.com/) for authentication. Follow these s
    
    You can get these keys from your Clerk dashboard after creating a project.
 
-3. **Clerk Configuration**
-   
-   The project is already configured with Clerk:
-   
-   - `middleware.ts` at the root of the project uses `clerkMiddleware()` from `@clerk/nextjs/server`
-   - `app/layout.tsx` wraps the application with `<ClerkProvider>`
-   - The Navbar component uses Clerk authentication UI components (`SignInButton`, `SignUpButton`, `UserButton`)
-
 4. **Start the Development Server**
    
    ```bash
@@ -44,8 +36,3 @@ This project uses [Clerk](https://clerk.com/) for authentication. Follow these s
    - Clicking the Sign In or Sign Up buttons in the navbar
    - Creating an account or signing in
    - After signing in, you should see the UserButton in the navbar
-
-## Additional Resources
-
-- [Clerk Documentation](https://clerk.com/docs)
-- [Clerk Next.js Quickstart](https://clerk.com/docs/quickstarts/nextjs)
