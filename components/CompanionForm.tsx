@@ -44,7 +44,7 @@ const CompanionForm = () => {
             topic: '',
             voice: '',
             style: '',
-            duration: 15,
+            duration: 2,
         },
     })
 
@@ -94,7 +94,7 @@ const CompanionForm = () => {
                                     <SelectTrigger className="input capitalize">
                                         <SelectValue placeholder="Select the subject" />
                                     </SelectTrigger>
-                                    <SelectContent>
+                                    <SelectContent className="bg-sky-50 text-black border border-gray-200 shadow-md">
                                         {subjects.map((subject) => (
                                             <SelectItem
                                                 value={subject}
@@ -146,7 +146,7 @@ const CompanionForm = () => {
                                             placeholder="Select the voice"
                                         />
                                     </SelectTrigger>
-                                    <SelectContent>
+                                    <SelectContent className="bg-sky-50 text-black border border-gray-200 shadow-md">
                                         <SelectItem value="male">
                                             Male
                                         </SelectItem>
@@ -177,7 +177,7 @@ const CompanionForm = () => {
                                             placeholder="Select the style"
                                         />
                                     </SelectTrigger>
-                                    <SelectContent>
+                                    <SelectContent className="bg-sky-50 text-black border border-gray-200 shadow-md">
                                         <SelectItem value="formal">
                                             Formal
                                         </SelectItem>
@@ -210,7 +210,13 @@ const CompanionForm = () => {
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="w-full cursor-pointer">Build Your Companion</Button>
+                <Button
+                    type="submit"
+                    className="w-full cursor-pointer bg-green-500 hover:bg-green-600 text-white"
+                >
+                Build Your Companion
+                </Button>
+
             </form>
         </Form>
     )
